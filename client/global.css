@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 220 26% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 30% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 30% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 47 96% 53%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 47 96% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 47 96% 53%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 47 96% 53%;
+
+    /* MatkaHub specific colors */
+    --gold: 47 96% 53%;
+    --gold-foreground: 220 26% 6%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 25 95% 53%;
+    --warning-foreground: 220 26% 6%;
+    --live-indicator: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 220 26% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 30% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 30% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 47 96% 53%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 47 96% 53%;
+
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 47 96% 53%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 47 96% 53%;
+
+    /* MatkaHub specific colors */
+    --gold: 47 96% 53%;
+    --gold-foreground: 220 26% 6%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 25 95% 53%;
+    --warning-foreground: 220 26% 6%;
+    --live-indicator: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
